@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #050816;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  font-size: 1.4rem;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+              url("../images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  letter-spacing: 4px;
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+/* HIGHLIGHT */
+.highlight {
+  padding: 100px;
+  text-align: center;
+}
+
+.highlight h2 {
+  font-size: 3rem;
+}
+
+/* GAMES */
+.games-section {
+  padding: 140px 60px;
+}
+
+.games-section h1 {
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.game-card {
+  background: #020617;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.game-card h3 {
+  font-size: 2.2rem;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ABOUT */
+.about-section {
+  padding: 160px 80px;
+}
+
+.about-section h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 1.8rem;
+  max-width: 900px;
+}
